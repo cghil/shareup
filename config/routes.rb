@@ -59,4 +59,8 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  devise_scope :user do
+    get '/api/current_user' => 'users/sessions#show_current_user'
+  end
 end
