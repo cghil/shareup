@@ -43,3 +43,5 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'uuidtools'
 
+gem 'angularjs-rails', '>=1.2.0.rc1'
+gem 'bootstrap-sass-rails'
