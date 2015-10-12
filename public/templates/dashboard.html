@@ -1,0 +1,14 @@
+<div class="panel panel-default" ng-repeat="article in articles | orderBy:publishedDate:false">
+    <div class="panel-heading">
+        <div class="article-listing">
+            <div class="large-11 small-11 columns">
+                <h4>
+					<a href="{{article.link}}" title="{{article.title}}">{{article.title}}</a>
+				</h4>
+            </div>
+        </div>
+    </div>
+    <div class="panel-body">
+        {{article.publishedDate | date: 'M/d/yy h:mm:ss a'}}
+    </div>
+</div>
