@@ -1,10 +1,10 @@
-var shareUpApp = angular.module('shareUpApp', ['ngRoute', 'myApp.controllers']);
+var shareUpApp = angular.module('shareUpApp', ['ngRoute']);
 
 shareUpApp.config(function($routeProvider){
 	$routeProvider
 
 	.when('/', {
-		templateUrl: '/templates/dashboard.html',
+		templateUrl: "templates/dashboard.html",
 		controller: 'HomeController'
 	})
 

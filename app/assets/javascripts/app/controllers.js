@@ -1,4 +1,9 @@
-angular.module('myApp.controllers', [])
-.controller('HomeController', ['$scope', function($scope){
-	
-}])
+shareUpApp.controller('HomeController', ['$scope', 'ArticleService', function($scope, ArticleService){
+
+	ArticleService.getLatestFeed()
+		.then(function(data){
+			$scope.articles = data;
+			console.log(data);
+		})
+
+}]);
